@@ -5,7 +5,7 @@ const Unvieling = () => {
 
   const gallery1 = imageArray1.map((image, index) => {
     return (
-      <div>
+      <div key={index}>
         <img src={image} alt={`image${index}`} />
       </div>
     );

@@ -1,9 +1,13 @@
+import { Link } from 'react-router-dom';
 import { image1x1, image1x2, image2x1, image2x2 } from '../assets';
 
 const Experience = () => {
-  const template = (arr: { heading: string; paragraph: string }[]) => {
+  const template = (
+    arr: { heading: string; paragraph: string; link: string }[]
+  ) => {
     const structure = arr.map((x, i) => (
-      <div
+      <Link
+        to={x.link}
         key={i}
         className='text-awobe-black flex flex-col py-[28px] px-[10px] items-center gap-[5px] rounded-[8px] border border-awobe-black w-[90%] hover:bg-awobe-black hover:text-awobe '>
         <h5 className='self-stretc text-center font-roboto text-xl leading-[36px] font-medium'>
@@ -12,7 +16,7 @@ const Experience = () => {
         <p className='text-center font-roboto text-[12px] font-medium leading-[21px]'>
           {x.paragraph}
         </p>
-      </div>
+      </Link>
     ));
     return structure;
   };
@@ -29,25 +33,30 @@ const Experience = () => {
               heading: 'Language and Dialect',
               paragraph:
                 'Get to know about the breath taking language of the people of Eggon',
+              link: '/language-and-dialect',
             },
             {
               heading: 'Delicious cuisine',
               paragraph:
                 'Have a life changing experience with the special delicacy of Eggon',
+              link: '/delicious-cuisine',
             },
             {
               heading: 'Traditional Festivals',
               paragraph:
                 'Dive deep into an experience of  unique cultural festival',
+              link: '/trad-fest',
             },
             {
               heading: 'Art and Craft',
               paragraph:
                 'Get to understand and see the extremely beautiful craft of Eggon',
+              link: '/art-and-craft',
             },
             {
               heading: 'Problems/Opportunities',
               paragraph: 'understand the problems and opportunities of Eggon',
+              link: '/problems-and-opportunities',
             },
           ])}
         </div>
@@ -58,11 +67,13 @@ const Experience = () => {
                 heading: 'Language and Dialect',
                 paragraph:
                   'Get to know about the breath taking language of the people of Eggon',
+                link: '/language-and-dialect',
               },
               {
                 heading: 'Delicious cuisine',
                 paragraph:
                   'Have a life changing experience with the special delicacy of Eggon',
+                link: '/delicious-cuisine',
               },
             ])}
           </div>
@@ -90,15 +101,18 @@ const Experience = () => {
                 heading: 'Traditional Festivals',
                 paragraph:
                   'Dive deep into an experience of  unique cultural festival',
+                link: '/trad-fest',
               },
               {
                 heading: 'Art and Craft',
                 paragraph:
                   'Get to understand and see the extremely beautiful craft of Eggon',
+                link: '/art-and-craft',
               },
               {
                 heading: 'Problems/Opportunities',
                 paragraph: 'understand the problems and opportunities of Eggon',
+                link: '/problems-and-opportunities',
               },
             ])}
           </div>
