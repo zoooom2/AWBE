@@ -1,20 +1,27 @@
-import { sponsor1, sponsor2, sponsor3 } from '../assets';
+import { sponsorArray } from '../utils/constants';
 
 const Sponsors = () => {
-  const sponsorArray = [sponsor1, sponsor2, sponsor3];
   const sponsors = sponsorArray.map((sponsor, index) => {
     return (
-      <div key={index} className='w-[100px] aspect-[140/107]'>
-        <img src={sponsor} className='object-contain' />
+      <div key={index} className='flex gap-5 flex-col'>
+        <figure className='h-[100px] max-smallMobile:h-[48px] aspect-[140/107] '>
+          <img src={sponsor.img} className='object-fill' />
+        </figure>
+
+        <figcaption className='font-awobeVerdana text-[18px] max-smallMobile:text-[10px] text-center font-semibold leading-[28px] text-[rgba(0,0,0,0.8)]'>
+          {sponsor.name}
+        </figcaption>
       </div>
     );
   });
   return (
     <section className='bg-awobe text-[32px] flex flex-col gap-[13px] pt-[20px] pb-[37px] items-center'>
-      <h4 className='text-[#161616] text-center font-awobeVerdana leading-[41.6px] font-bold w-3/5 text-[30px]'>
+      <h4 className='text-[#161616] text-center font-awobeVerdana leading-[41.6px] font-bold w-3/5 text-[30px] max-smallMobile:text-[18px] max-smallMobile:w-full'>
         Some of our sponsors
       </h4>
-      <div className='flex justify-around w-4/5 items-center'>{sponsors}</div>
+      <div className='flex justify-around w-4/5 max-smallMobile:w-full items-center flex-wrap gap-2 max-tablet:justify-center'>
+        {sponsors}
+      </div>
     </section>
   );
 };

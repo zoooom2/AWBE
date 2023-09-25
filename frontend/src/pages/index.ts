@@ -1,15 +1,4 @@
 import LandingPage from './LandingPage';
-import ArtAndCraft from './ArtAndCraft';
-import DeliciousCuisine from './DeliciousCuisine';
-import LanguageAndDialect from './LanguageAndDialect';
-import ProblemsAndOpportunities from './ProblemsAndOpportunities';
-import TradFest from './TradFest';
+import PageTemplate from './PageTemplate';
 
-export {
-  LandingPage,
-  ArtAndCraft,
-  DeliciousCuisine,
-  LanguageAndDialect,
-  ProblemsAndOpportunities,
-  TradFest,
-};
+export { LandingPage, PageTemplate };

@@ -1,15 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import {
-  LandingPage,
-  ArtAndCraft,
-  DeliciousCuisine,
-  LanguageAndDialect,
-  ProblemsAndOpportunities,
-  TradFest,
-} from './pages';
+import { LandingPage } from './pages';
 
 import { Navbar, Footer } from './components';
+import PageTemplate from './pages/PageTemplate';
+import {
+  artAndCraftPageConstant,
+  deliciousCuisineConstant,
+  languageAndDialectConst,
+  problemsAndOpportunitiesConst,
+  tradFestConst,
+} from './utils/constants';
 
 function App() {
   return (
@@ -17,14 +18,56 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<LandingPage />} />
-        <Route path='/art-and-craft' element={<ArtAndCraft />} />
-        <Route path='/delicious-cuisine' element={<DeliciousCuisine />} />
-        <Route path='/language-and-dialect' element={<LanguageAndDialect />} />
+        <Route
+          path='/art-and-craft'
+          element={
+            <PageTemplate
+              Title={artAndCraftPageConstant.Title}
+              Paragraph={artAndCraftPageConstant.Paragraph}
+              Img={artAndCraftPageConstant.Img}
+            />
+          }
+        />
+        <Route
+          path='/delicious-cuisine'
+          element={
+            <PageTemplate
+              Title={deliciousCuisineConstant.Title}
+              Paragraph={deliciousCuisineConstant.Paragraph}
+              Img={deliciousCuisineConstant.Img}
+            />
+          }
+        />
+        <Route
+          path='/language-and-dialect'
+          element={
+            <PageTemplate
+              Title={languageAndDialectConst.Title}
+              Paragraph={languageAndDialectConst.Paragraph}
+              Img={languageAndDialectConst.Img}
+            />
+          }
+        />
         <Route
           path='/problems-and-opportunities'
-          element={<ProblemsAndOpportunities />}
+          element={
+            <PageTemplate
+              Title={problemsAndOpportunitiesConst.Title}
+              Paragraph={problemsAndOpportunitiesConst.Paragraph}
+              Img={problemsAndOpportunitiesConst.Img}
+            />
+          }
         />
-        <Route path='/trad-fest' element={<TradFest />} />
+        <Route
+          path='/trad-fest'
+          element={
+            <PageTemplate
+              Title={tradFestConst.Title}
+              Paragraph={tradFestConst.Paragraph}
+              Img={tradFestConst.Img}
+            />
+          }
+        />
       </Routes>
       <Footer />
     </Router>
