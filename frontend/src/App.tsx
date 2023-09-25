@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { LandingPage } from './pages';
+
 import { Navbar, Footer } from './components';
 import PageTemplate from './pages/PageTemplate';
 import {
