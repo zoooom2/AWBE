@@ -1,12 +1,23 @@
 import { excosData } from '../assets';
+import { Link, useLocation } from 'react-router-dom';
 
 const Excos = () => {
-  const excoTemplate = excosData.map(
+  const location = useLocation();
+  const isExcosPage = location.pathname.endsWith('excos');
+  let data = [] as typeof excosData;
+
+  if (!isExcosPage) {
+    data = excosData.slice(0, 4);
+  } else {
+    data = excosData;
+  }
+
+  const excoTemplate = data.map(
     (exco: { name: string; img: string; post: string }, i: number) => (
       <div
         key={i}
         className='flex flex-col gap-2 aspect-[288/343] max-w-[230px]'>
-        <figure className='bg-awobe rounded-tl-[65%] rounded-br-[65%]  w-full h-full overflow-hidden'>
+        <figure className='bg-awobe rounded-tl-[65%] rounded-br-[65%] w-full h-full overflow-hidden'>
           <img
             src={exco.img}
             alt=''
@@ -32,6 +43,13 @@ const Excos = () => {
       <div className='flex flex-wrap justify-around items-center w-full gap-y-20'>
         {excoTemplate}
       </div>
+      {!isExcosPage && (
+        <Link
+          to={'/excos'}
+          className='text-right text-white px-3 hover:text-awobe cursor-pointer'>
+          READ MORE
+        </Link>
+      )}
     </section>
   );
 };

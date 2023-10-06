@@ -9,6 +9,8 @@ import {
   tradFestImg,
 } from '../assets';
 
+import { FaXTwitter, FaInstagram, FaFacebook } from 'react-icons/fa6';
+
 export const footerLinks = [
   {
     name: 'Festivals',
@@ -36,6 +38,21 @@ export const sponsorArray = [
   { img: sponsor1, name: 'Jam Foundation' },
   { img: sponsor2, name: 'Skypricon' },
   { img: sponsor3, name: 'Duocore' },
+];
+
+export const socialsConstant = [
+  {
+    name: 'X',
+    logo: FaXTwitter,
+  },
+  {
+    name: 'Instagram',
+    logo: FaInstagram,
+  },
+  {
+    name: 'Facebook',
+    logo: FaFacebook,
+  },
 ];
 
 export const artAndCraftPageConstant = {

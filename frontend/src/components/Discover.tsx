@@ -20,7 +20,7 @@ const Discover = () => {
             </span>{' '}
             Eggon Tribe{' '}
           </h3>
-          <p className='w-10/12 font-roboto text-[#ffffff80] text-[14px] leading-[24px] tracking-[0.002em]'>
+          <p className='w-10/12 font-roboto text-[#fff] opacity-[75%] text-[14px] leading-[24px] tracking-[0.002em]'>
             The Eggon people have a rich cultural heritage and practice various
             customs and traditions. They have elaborate rites of passage for
             important life events such as birth, marriage, and death. Their

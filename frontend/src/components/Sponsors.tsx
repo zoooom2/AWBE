@@ -4,11 +4,11 @@ const Sponsors = () => {
   const sponsors = sponsorArray.map((sponsor, index) => {
     return (
       <div key={index} className='flex gap-5 flex-col'>
-        <figure className='h-[100px] max-smallMobile:h-[48px] aspect-[140/107] '>
+        <figure className='h-[100px] max-smallMobile:h-[48px] max-tablet:h-[60px] aspect-[140/107] flex justify-center'>
           <img src={sponsor.img} className='object-fill' />
         </figure>
 
-        <figcaption className='font-awobeVerdana text-[18px] max-smallMobile:text-[10px] text-center font-semibold leading-[28px] text-[rgba(0,0,0,0.8)]'>
+        <figcaption className='font-awobeVerdana text-[18px] max-smallMobile:text-[10px] max-tablet:text-[14px] text-center font-semibold leading-[28px] text-[rgba(0,0,0,0.8)]'>
           {sponsor.name}
         </figcaption>
       </div>
@@ -16,10 +16,10 @@ const Sponsors = () => {
   });
   return (
     <section className='bg-awobe text-[32px] flex flex-col gap-[13px] pt-[20px] pb-[37px] items-center'>
-      <h4 className='text-[#161616] text-center font-awobeVerdana leading-[41.6px] font-bold w-3/5 text-[30px] max-smallMobile:text-[18px] max-smallMobile:w-full'>
+      <h4 className='text-[#161616] text-center font-awobeVerdana leading-[41.6px] font-bold w-3/5 text-[30px] max-tablet:text-[20px] max-smallMobile:w-full'>
         Some of our sponsors
       </h4>
-      <div className='flex justify-around w-4/5 max-smallMobile:w-full items-center flex-wrap gap-2 max-tablet:justify-center'>
+      <div className='flex justify-around w-4/5 max-smallMobile:w-full items-center flex-wrap gap-2 max-tablet:justify-around justify-items-start'>
         {sponsors}
       </div>
     </section>

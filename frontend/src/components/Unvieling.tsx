@@ -54,8 +54,8 @@ const Unvieling = () => {
           </div>
         </div>
         <div className='w-1/2 flex gap-4'>
-          <div className='flex flex-col gap-4'>{gallery1}</div>
-          <div className='flex flex-col gap-4'>{gallery2}</div>
+          <div className='flex flex-col gap-4 -translate-y-10'>{gallery1}</div>
+          <div className='flex flex-col gap-4 translate-y-5'>{gallery2}</div>
         </div>
       </section>
     </>

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { LandingPage } from './pages';
 
-import { Navbar, Footer } from './components';
+import { Navbar, Footer, Excos } from './components';
 import PageTemplate from './pages/PageTemplate';
 import {
   artAndCraftPageConstant,
@@ -17,6 +17,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<LandingPage />} />
+        <Route path='/excos' element={<Excos />} />
+
         <Route
           path='/art-and-craft'
           element={

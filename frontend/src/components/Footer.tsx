@@ -1,5 +1,5 @@
 import { logo } from '../assets';
-import { sponsorArray, footerLinks } from '../utils/constants';
+import { footerLinks, socialsConstant } from '../utils/constants';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -10,14 +10,16 @@ const Footer = () => {
       </Link>
     )
   );
-  const sponsors = sponsorArray.map((sponsor, index) => {
+  const socials = socialsConstant.map((social, index) => {
     return (
       <figure
         key={index}
-        className='w-[40px] aspect-[140/107] flex gap-2 items-center'>
-        <img src={sponsor.img} className='object-contain' />
+        className='w-[40px] aspect-[140/107] flex gap-2 items-center cursor-pointer'>
+        <div>
+          <social.logo />
+        </div>
         <figcaption className='font-roboto text-[12px] text-awobe-black'>
-          {sponsor.name}
+          {social.name}
         </figcaption>
       </figure>
     );
@@ -41,7 +43,7 @@ const Footer = () => {
   // );
   return (
     <footer className='flex flex-col bg-awobe py-[50px] items-center gap-10'>
-      <div className='flex max-tablet:gap-2 gap-10 w-full justify-around tablet:justify-start tablet:px-5 max-smallMobile:gap-5 max-smallMobile:flex-col max-smallMobile:px-5'>
+      <div className='flex max-tablet:gap-2 gap-10 w-full justify-around tablet:justify-between tablet:px-5 max-smallMobile:gap-5 max-smallMobile:flex-col max-smallMobile:px-5'>
         <menu className='flex flex-col gap-3'>
           <h3 className='text-[16px] font-semibold font-awobeVerdana'>Links</h3>
           <div className='flex flex-col text-[12px] font-normal leading-9'>
@@ -53,7 +55,7 @@ const Footer = () => {
             Sponsors
           </h3>
           <div className='flex flex-col gap-4 text-[12px] font-normal'>
-            {sponsors}
+            {socials}
           </div>
         </div>
       </div>
