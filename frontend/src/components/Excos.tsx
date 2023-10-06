@@ -40,7 +40,7 @@ const Excos = () => {
       <h3 className='text-awobe text-center font-awobeVerdana text-[32px] font-bold leading-10 max-tablet:text-[20px]'>
         AWBE National EXCO
       </h3>
-      <div className='flex flex-wrap justify-around items-center w-full gap-y-20'>
+      <div className='flex flex-wrap justify-start gap-x-1 items-center w-full gap-y-20'>
         {excoTemplate}
       </div>
       {!isExcosPage && (
