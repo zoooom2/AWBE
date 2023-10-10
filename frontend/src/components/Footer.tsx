@@ -52,7 +52,7 @@ const Footer = () => {
         </menu>
         <div className='flex flex-col gap-4'>
           <h3 className='text-[16px] font-semibold font-awobeVerdana'>
-            Sponsors
+            Socials
           </h3>
           <div className='flex flex-col gap-4 text-[12px] font-normal'>
             {socials}
