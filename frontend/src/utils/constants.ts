@@ -35,9 +35,9 @@ export const footerLinks = [
 ];
 
 export const sponsorArray = [
-  { img: sponsor1, name: 'Jam Foundation' },
-  { img: sponsor2, name: 'Skypricon' },
-  { img: sponsor3, name: 'Duocore' },
+  { img: sponsor1, name: 'JAM Foundation' },
+  { img: sponsor2, name: 'Skypricorn' },
+  { img: sponsor3, name: 'Duocore Technologies' },
 ];
 
 export const socialsConstant = [
