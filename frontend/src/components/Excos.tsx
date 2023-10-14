@@ -23,7 +23,7 @@ const Excos = () => {
           />
         </figure>
         <figcaption className='flex flex-col'>
-          <div className='text-awobe text-[14px] font-awobeVerdana self-stretch font-medium leading-[34.531px]'>
+          <div className='text-awobe text-[14px] font-awobeVerdana self-stretch font-medium leading-[28px]'>
             {exco.name}
           </div>
           <div className='text-awobe-white text-[12px] font-roboto leading-[24px] font-normal'>
