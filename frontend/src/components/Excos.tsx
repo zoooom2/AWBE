@@ -14,12 +14,12 @@ const Excos = () => {
 
   const excoTemplate = data.map(
     (exco: { name: string; img: string; post: string }, i: number) => (
-      <div key={i} className='flex flex-col gap-2 aspect-[288/343] w-[230px]'>
-        <figure className='bg-awobe rounded-tl-[65%] rounded-br-[65%] w-full h-full overflow-hidden'>
+      <div key={i} className='flex flex-col gap-2 aspect-[288/343] w-[150px]'>
+        <figure className='bg-awobe rounded-tl-[75%] rounded-br-[70%] w-full h-[200px] overflow-hidden'>
           <img
             src={exco.img}
             alt=''
-            className='object-center pt-6 rounded-tl-[175px] w-full h-full'
+            className='object-center pt-4 rounded-tl-[140px] w-full h-full'
           />
         </figure>
         <figcaption className='flex flex-col'>
@@ -47,7 +47,7 @@ const Excos = () => {
         <Link
           to={'/excos'}
           className='text-right text-white px-3 hover:text-awobe cursor-pointer justify-items-start'>
-          READ MORE
+          SEE MORE
         </Link>
       )}
     </section>
