@@ -9,7 +9,7 @@ const Experience = () => {
       <Link
         to={x.link}
         key={i}
-        className='text-awobe-black flex flex-col py-[28px] px-[10px] items-center gap-[5px] rounded-[8px] border border-awobe-black w-[90%] hover:bg-awobe-black hover:text-awobe '>
+        className='text-awobe-black flex flex-col py-[28px] px-[10px] items-center gap-[5px] rounded-[8px] border border-awobe-black w-[90%] hover:bg-awobe-black hover:text-awobe max-tablet:hover:bg-awobe'>
         <h5 className='self-stretc text-center font-roboto text-xl leading-[36px] font-medium'>
           {x.heading}
         </h5>
