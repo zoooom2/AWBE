@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         </menu>
         <div className='flex flex-col gap-4'>
-          <h3 className='text-[14px] font-extrabold leading-[21px] font-roboto text-[rgba(0,0,0,0.5)]'>
+          <h3 className='text-[16px] font-extrabold leading-[21px] font-roboto text-[rgba(0,0,0,0.5)]'>
             Socials
           </h3>
           <div className='flex flex-col gap-4 text-[12px] font-normal'>
