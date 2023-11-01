@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   const menuTemplate = footerLinks.map(
     (link: { name: string; to: string }, i) => (
-      <Link key={i} to={link.to} className='font-roboto'>
+      <Link
+        key={i}
+        to={link.to}
+        className='font-roboto text-[16px] font-semibold leading-6'>
         {link.name}
       </Link>
     )
@@ -14,13 +17,10 @@ const Footer = () => {
     return (
       <figure
         key={index}
-        className='w-[40px] aspect-[140/107] flex gap-2 items-center cursor-pointer'>
+        className='w-[40px] aspect-[140/107] flex gap-2 items-center cursor-pointer justify-center'>
         <div>
           <social.logo />
         </div>
-        <figcaption className='font-roboto text-[12px] text-awobe-black'>
-          {social.name}
-        </figcaption>
       </figure>
     );
   });
@@ -45,13 +45,12 @@ const Footer = () => {
     <footer className='flex flex-col bg-awobe py-[50px] items-center gap-10'>
       <div className='flex max-tablet:gap-2 gap-10 w-full justify-around tablet:justify-between tablet:px-5 max-smallMobile:gap-5 max-smallMobile:flex-col max-smallMobile:px-5'>
         <menu className='flex flex-col gap-3'>
-          <h3 className='text-[16px] font-semibold font-awobeVerdana'>Links</h3>
-          <div className='flex flex-col text-[12px] font-normal leading-9'>
+          <div className='flex flex-col gap-[22px] font-normal'>
             {menuTemplate}
           </div>
         </menu>
         <div className='flex flex-col gap-4'>
-          <h3 className='text-[16px] font-semibold font-awobeVerdana'>
+          <h3 className='text-[14px] font-extrabold leading-[21px] font-roboto text-[rgba(0,0,0,0.5)]'>
             Socials
           </h3>
           <div className='flex flex-col gap-4 text-[12px] font-normal'>

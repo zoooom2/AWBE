@@ -5,9 +5,9 @@ import uv3 from './awobeImg3.jpeg';
 import uv4 from './awobeImg4.jpeg';
 import uv5 from './awobeImg5.jpeg';
 import uv6 from './awobeImg6.jpeg';
-import sponsor1 from './jamlogo.svg';
-import sponsor2 from './jamlogo2.svg';
-import sponsor3 from './jamlogo3.svg';
+import jamLogo from './updated jam logo.png';
+import skypriconLogo from './updated skypricon logo.png';
+import duocoreLogo from './updated duocore logo.png';
 import discoverImg from './discoverImg.jpeg';
 import experienceImg from './experienceImg.jpeg';
 import image1x1 from './bitfuul-images/image1x1.jpeg';
@@ -39,9 +39,9 @@ export {
   uv4,
   uv5,
   uv6,
-  sponsor1,
-  sponsor2,
-  sponsor3,
+  jamLogo,
+  skypriconLogo,
+  duocoreLogo,
   discoverImg,
   experienceImg,
   image1x1,

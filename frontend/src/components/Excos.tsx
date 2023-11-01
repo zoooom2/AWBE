@@ -14,7 +14,9 @@ const Excos = () => {
 
   const excoTemplate = data.map(
     (exco: { name: string; img: string; post: string }, i: number) => (
-      <div key={i} className='flex flex-col gap-2 aspect-[288/343] w-[150px]'>
+      <div
+        key={i}
+        className='flex flex-col gap-2 aspect-[288/343] laptop:w-[220px] w-[150px]'>
         <figure className='bg-awobe rounded-tl-[75%] rounded-br-[70%] w-full h-[200px] overflow-hidden'>
           <img
             src={exco.img}
@@ -36,7 +38,7 @@ const Excos = () => {
   return (
     <section className='flex flex-col bg-awobe-black py-[70px] px-[54px] max-tablet:px-0 gap-[60px]'>
       <h3 className='text-awobe text-center font-awobeVerdana text-[32px] font-bold leading-10 max-tablet:text-[20px]'>
-        AWBE National EXCO
+        AWBE BOT
       </h3>
       <div className='flex justify-center items-center w-full'>
         <div className='flex flex-wrap justify-start max-tablet:justify-evenly gap-10'>

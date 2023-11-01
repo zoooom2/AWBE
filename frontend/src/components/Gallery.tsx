@@ -36,7 +36,7 @@ const Gallery = () => {
               'https://res.cloudinary.com/dlk2a6ppp/image/upload/w_500/v1696934552/Awobe%20pictures/0G5A4269_rxpy6c.jpg'
             }
             alt=''
-            className='h-full w-full rounded-2xl'
+            className='h-full w-full rounded-2xl '
           />
         </div>
       </div>

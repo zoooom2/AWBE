@@ -3,9 +3,9 @@ import {
   deliciousCuisineImg,
   languageAndDialectImg,
   problemAndOpportunitiesImg,
-  sponsor1,
-  sponsor2,
-  sponsor3,
+  jamLogo,
+  skypriconLogo,
+  duocoreLogo,
   tradFestImg,
 } from '../assets';
 
@@ -35,9 +35,9 @@ export const footerLinks = [
 ];
 
 export const sponsorArray = [
-  { img: sponsor1, name: 'JAM Foundation' },
-  { img: sponsor2, name: 'Skypricorn' },
-  { img: sponsor3, name: 'Duocore Technologies' },
+  { img: jamLogo, name: 'JAM Foundation' },
+  { img: skypriconLogo, name: 'Skypricorn' },
+  { img: duocoreLogo, name: 'Duocore Technologies' },
 ];
 
 export const socialsConstant = [
