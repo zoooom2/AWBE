@@ -11,7 +11,7 @@ const Gallery = () => {
           Explore the vibrant life style of the Eggon people
         </p>
       </div>
-      <div className='flex w-full flex-wrap justify-around px-[40px] max-tablet:px-3 gap-5 max-tablet:justify-start'>
+      <div className='flex w-full flex-wrap justify-around px-[40px] max-tablet:px-3 gap-3 max-tablet:justify-center'>
         <div className='w-[30%] aspect-[418/429] max-tablet:w-[45%]'>
           <img
             src={

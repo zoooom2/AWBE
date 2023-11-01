@@ -14,7 +14,7 @@ const Unvieling = () => {
   return (
     <>
       <section
-        className='flex h-[100vh] px-10 gap-4 overflow-hidden relative tablet:hidden'
+        className='flex h-[70vh] px-10 gap-4 overflow-hidden relative tablet:hidden'
         style={{
           backgroundImage: `url('${unvielingImg}')`,
           backgroundColor: 'lightgray',

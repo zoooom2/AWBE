@@ -16,7 +16,7 @@ const Sponsors = () => {
   });
   return (
     <section className='bg-awobe text-[32px] flex flex-col gap-[13px] pt-[20px] pb-[37px] items-center'>
-      <h4 className='text-[#161616] text-center font-awobeVerdana leading-[41.6px] font-bold w-3/5 text-[30px] max-tablet:text-[20px] max-smallMobile:w-full'>
+      <h4 className='text-[#161616] text-center font-awobeVerdana leading-[41.6px] font-bold tablet:w-3/5 text-[30px] max-tablet:text-[24px] max-smallMobile:w-full'>
         Some of our sponsors
       </h4>
       <div className='flex justify-around w-4/5 max-smallMobile:w-full items-center flex-wrap gap-2 max-tablet:justify-around'>

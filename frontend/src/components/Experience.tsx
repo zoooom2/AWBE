@@ -23,8 +23,8 @@ const Experience = () => {
   return (
     <>
       <section className='bg-awobe flex flex-col items-center py-7 gap-[48px] px-2 relative'>
-        <h3 className='font-awobeVerdana text-[30px] font-bold leading-[38px] w-[45%] text-center max-tablet:w-10/12 max-tablet:leading-[45px] max-smallMobile:text-[24px] max-smallMobile:leading-[40px]'>
-          Experience the culture heritage of the{' '}
+        <h3 className='font-awobeVerdana text-[30px] font-bold leading-[38px] w-[45%] text-center max-tablet:w-10/12 max-tablet:leading-[45px] max-tablet:text-[24px] max-smallMobile:leading-[40px]'>
+          Experience the culture of the{' '}
           <span className='text-awobe-rose'>Eggon people</span>
         </h3>
         <div className='flex flex-col gap-5 items-center tablet:hidden'>
