@@ -53,7 +53,7 @@ const Footer = () => {
           <h3 className='text-[16px] font-extrabold leading-[21px] font-roboto text-[rgba(0,0,0,0.5)]'>
             Socials
           </h3>
-          <div className='flex flex-col gap-4 text-[12px] font-normal justify-between h-full'>
+          <div className='flex flex-col gap-4 text-[24px] font-normal justify-between h-full'>
             {socials}
           </div>
         </div>
