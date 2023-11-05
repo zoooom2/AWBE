@@ -7,7 +7,7 @@ const Excos = () => {
   let data = [] as typeof excosData;
 
   if (!isExcosPage) {
-    data = excosData.slice(0, 4);
+    data = excosData.slice(0, 3);
   } else {
     data = excosData;
   }
@@ -16,8 +16,8 @@ const Excos = () => {
     (exco: { name: string; img: string; post: string }, i: number) => (
       <div
         key={i}
-        className='flex flex-col gap-2 aspect-[288/343] laptop:w-[220px] w-[150px]'>
-        <figure className='bg-awobe rounded-tl-[75%] rounded-br-[70%] w-full h-[200px] overflow-hidden'>
+        className='flex flex-col gap-2 aspect-[288/343] laptop:w-[220px] w-[170px]'>
+        <figure className='bg-awobe rounded-tl-[75%] rounded-br-[70%] w-full h-[200px] laptop:h-[250px] overflow-hidden'>
           <img
             src={exco.img}
             alt=''
@@ -40,10 +40,10 @@ const Excos = () => {
       <h3 className='text-awobe text-center font-awobeVerdana text-[32px] font-bold leading-10 max-tablet:text-[24px]'>
         AWBE BOT
       </h3>
-      <div className='flex justify-center items-center w-full'>
-        <div className='flex flex-wrap justify-start max-tablet:justify-evenly gap-10'>
-          {excoTemplate}
-        </div>
+      <div className='flex max-tablet:justify-center gap-5 flex-wrap items-center w-full justify-evenly'>
+        {/* <div className='flex flex-wrap justify-start max-tablet:justify-evenly gap-10'> */}
+        {excoTemplate}
+        {/* </div> */}
       </div>
       {!isExcosPage && (
         <Link

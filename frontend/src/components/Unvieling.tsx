@@ -41,7 +41,7 @@ const Unvieling = () => {
           </div>
         </div>
       </section>
-      <section className='flex h-screen px-10 gap-4 overflow-hidden bg-awobe-white max-tablet:hidden'>
+      <section className='flex h-screen px-10 gap-4 overflow-hidden bg-awobe-white max-tablet:hidden max-laptop:h-[70vh]'>
         <div className='w-1/2 h-[90%] px-4 flex flex-col gap-[30px] justify-center'>
           <h1 className='font-awobeVerdana font-bold leading-[55.2px] text-awobe-black text-[42px] '>
             Unveiling The Resilience And Rich Heritage of The{' '}

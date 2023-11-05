@@ -8,19 +8,19 @@ const Discover = () => {
           <img
             src={discoverImg}
             alt=''
-            className='rounded-3xl border-0 h-full object-fill'
+            className='rounded-3xl border-0 h-full object-cover'
           />
         </div>
       </div>
       <div className='w-1/2 max-tablet:w-full'>
-        <div className='w-11/12 flex flex-col justify-center gap-[22px] items-center max-tablet:w-auto px-2'>
-          <h3 className='font-awobeVerdana text-[30px] leading-10 text-awobe-white font-bold max-tablet:text-[28px] w-10/12'>
+        <div className='tablet:w-11/12 flex flex-col justify-center gap-[22px] items-center'>
+          <h3 className='font-awobeVerdana text-[30px] leading-10 text-awobe-white font-bold max-tablet:text-[28px] w-10/12 tablet:w-full'>
             <span className='text-awobe'>
               Discover the fascinating traditions of the
             </span>{' '}
             Eggon Tribe{' '}
           </h3>
-          <p className='w-10/12 font-roboto text-[#fff] opacity-[75%] text-[14px] leading-[24px] tracking-[0.002em]'>
+          <p className='w-10/12 tablet:w-full font-roboto text-[#fff] opacity-[75%] text-[14px] leading-[24px] tracking-[0.002em]'>
             The Eggon people have a rich cultural heritage and practice various
             customs and traditions. They have elaborate rites of passage for
             important life events such as birth, marriage, and death. Their
